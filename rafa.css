@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.container-top{
+    height: 80%;
+}
+main > div{
+    display: flex;
+}
+
+.container-left{
+    width: 45%;
+    padding: 6px;
+}
+
+
+/* -------------------------buscadores------------------------------ */
+.container-left > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+}
+
+fieldset{
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    border-color: rgb(255, 255, 255);
+}
+.container-left > div:nth-child(1) fieldset:nth-child(2){
+    width: 57%;
+}
+
+fieldset input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: none;
+    outline: 0px;
+}
+
+/* -------------------------Empleado------------------------------ */
+.container-left{
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+
+.container-left >div:nth-child(2) > span:nth-child(1){
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color:  #d3d3d3;
+}
+.container-left >div:nth-child(2) > span:nth-child(2){
+    font-size: 20px;
+    color:  #d3d3d3;
+}
+.container-left >div:nth-child(2) > p{
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* -------------------------lista------------------------------ */
+
+.detail-list{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.detail-list div{
+    display: flex;
+    
+    font-size: 12px;
+    justify-content: space-between;
+    padding: 2px 5px;
+}
+.detail-list > div:nth-child(2n-1){
+    background-color: #d3d3d373;
+}
+
+.detail-list div div:nth-child(1){
+    flex-direction: column;
+    width: 50%;
+}
+.detail-list div div:nth-child(3){
+    flex-direction: column;
+    width: 20%;
+    align-items: flex-end;
+}
+.detail-list div div:nth-child(2){
+    width: 10%;
+    justify-content: center;
+    align-content: center;
+}
+.detail-list div span:nth-child(4),
+.detail-list div span:nth-child(5){
+    width: 10%;
+}
+
+.nombre{
+    font-size: 15px;
+}
+.codigo{
+    color: #383838;
+}
+.Sub-Total p:nth-child(2){
+    font-size: 11px;
+    color: #818181;
+}
+
+.icon-pencil,
+.icon-cross{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}
+.icon-pencil {
+    background-color: rgb(49, 153, 49);
+}
+.icon-cross {
+    background-color: rgb(226, 73, 73);
+}
+
+
+
+
+/* -------------------------contenedor de la derecha------------------------------ */
+.container-right{
+    height: 100%;
+    width: 55%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.container-right > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-right > div div{
+    border-radius: 5px;
+}
+
+
+.container-right > div:nth-child(1){
+    width: 100%;
+    height: 25%;
+    /* background-color: rgb(51, 51, 51); */
+}
+.container-right > div:nth-child(2){
+    width: 100%;
+    height: 62.5%;
+    /* background-color: rgb(90, 86, 86); */
+}
+.container-right > div:nth-child(3){
+    width: 100%;
+    height: 12.5%;
+    /* background-color: rgb(58, 58, 58); */
+}
+/* .container-right > div:nth-child(3) div{
+    background-color: violet;
+} */
+
+
+
+.container-right  div:nth-child(1) > div{
+    width: 18%;
+    height: 40%;
+    flex-wrap:wrap;
+    margin: 1%;
+    background-color: rgb(24, 139, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+ 
+.container-right div:nth-child(1) .primer-cuadro,
+.container-right div:nth-child(1) .ultimo-cuadro{
+    background-color:  rgb(69, 202, 87);
+    font-size: 30px;
+    color: white;
+}
+.container-right div:nth-child(1) .flecha-cuadro{
+    background-color: rgb(236, 197, 20);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+
+.container-right  div:nth-child(2) > div{
+    width: 18%;
+    height: 16%;
+    margin: 1%;
+    background-color: rgb(166, 213, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-right  div:nth-child(3) > div{
+    width: 18%;
+    height: 80%;
+    margin: 1%;
+    background-color: rgb(24, 139, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+
+/* -------------------------contenedor de abajo------------------------------ */
+.container-bottom {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container-bottom > div:nth-child(1){
+    height: 90%;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-bottom > div:nth-child(2){
+    height: 90%;
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------------------------botones de abajo------------------------------ */
+
+
+.total{
+    width: 59%;
+    border-top: #383838 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.total div{
+    display: flex;
+    justify-content: space-between;
+}
+.total div:nth-child(1) p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.total div:nth-child(2) p,
+.total div:nth-child(3) p{
+    font-size: 13px;
+}
+
+
+.peso{
+    width: 39%;
+    background-color: rgb(255, 255, 255);
+    border: #383838 solid 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 25px 10px;
+    justify-content: space-evenly;
+}
+.peso > div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+.peso > div p:nth-child(1){
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: -3px; 
+}
+
+
+.botones-finales  button{
+    border: none;
+    border-radius: 5px;
+}
+.pagar{
+    width: 49%;
+    background-color: rgb(69, 202, 87);
+    font-size: 18px;
+    font-weight: bold;
+}
+.personitas{
+    width: 23%;
+    background-color: rgb(236, 197, 20);
+    font-size: 25px;
+    color: white;
+}
+.candado{
+    width: 23%;
+    background-color: rgb(214, 48, 48);
+    font-size: 25px;
+    color: white;
+}
