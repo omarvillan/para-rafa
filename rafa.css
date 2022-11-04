@@ -10,7 +10,6 @@ main{
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-    padding: 0 30px;
 }
 .container-top{
     height: 80%;
@@ -95,19 +94,20 @@ fieldset input{
     flex-direction: column;
     width: 50%;
 }
-.detail-list div div:nth-child(3){
-    flex-direction: column;
-    width: 20%;
-    align-items: flex-end;
-}
 .detail-list div div:nth-child(2){
     width: 10%;
     justify-content: center;
     align-content: center;
 }
+.detail-list div div:nth-child(3){
+    flex-direction: column;
+    width: 20%;
+    align-items: flex-end;
+}
+
 .detail-list div span:nth-child(4),
 .detail-list div span:nth-child(5){
-    width: 10%;
+    width: 35px;
 }
 
 .nombre{
@@ -116,6 +116,10 @@ fieldset input{
 .codigo{
     color: #383838;
 }
+/* .Qty{
+    margin: 0 20px;
+} */
+
 .Sub-Total p:nth-child(2){
     font-size: 11px;
     color: #818181;
@@ -162,12 +166,10 @@ fieldset input{
 .container-right > div:nth-child(1){
     width: 100%;
     height: 25%;
-    /* background-color: rgb(51, 51, 51); */
 }
 .container-right > div:nth-child(2){
     width: 100%;
     height: 62.5%;
-    /* background-color: rgb(90, 86, 86); */
 }
 .container-right > div:nth-child(3){
     width: 100%;
@@ -182,8 +184,6 @@ fieldset input{
 
 .container-right  div:nth-child(1) > div{
     width: 18%;
-    height: 40%;
-    flex-wrap:wrap;
     margin: 1%;
     background-color: rgb(24, 139, 206);
     display: flex;
@@ -192,7 +192,6 @@ fieldset input{
     font-size: 12px;
     font-weight: bold;
     text-align: center;
-    
 }
  
 .container-right div:nth-child(1) .primer-cuadro,
@@ -224,11 +223,12 @@ fieldset input{
 
 
 
+
 /* ----------------------------------------------------------- */
 
 .container-right  div:nth-child(2) > div{
     width: 18%;
-    height: 16%;
+    /* height: 16%; */
     margin: 1%;
     background-color: rgb(166, 213, 240);
     display: flex;
@@ -257,7 +257,7 @@ fieldset input{
 
 .container-right  div:nth-child(3) > div{
     width: 18%;
-    height: 80%;
+    /* height: 80%; */
     margin: 1%;
     background-color: rgb(24, 139, 206);
     display: flex;
@@ -320,7 +320,7 @@ fieldset input{
 
 .peso{
     width: 39%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     border: #383838 solid 1px;
     display: flex;
     flex-direction: column;
@@ -360,4 +360,23 @@ fieldset input{
     background-color: rgb(214, 48, 48);
     font-size: 25px;
     color: white;
+}
+
+
+@media (max-height:500px){
+
+    .total div:nth-child(1) p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .peso > p{
+        font-size: 15px;
+        margin-bottom: -5px; 
+    }
+    .peso > div p:nth-child(1){
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: -3px; 
+    }
+
 }
