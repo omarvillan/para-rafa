@@ -166,6 +166,7 @@ fieldset input{
 .container-right > div:nth-child(1){
     width: 100%;
     height: 25%;
+    background-color: #383838;
 }
 .container-right > div:nth-child(2){
     width: 100%;
@@ -176,15 +177,13 @@ fieldset input{
     height: 12.5%;
     /* background-color: rgb(58, 58, 58); */
 }
-/* .container-right > div:nth-child(3) div{
-    background-color: violet;
-} */
 
 
 
 .container-right  div:nth-child(1) > div{
     width: 18%;
     margin: 1%;
+    height: 40%;
     background-color: rgb(24, 139, 206);
     display: flex;
     justify-content: center;
